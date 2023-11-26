@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.a31ad5fd.css",
+    "main.js": "/my-portfolio/static/js/main.6b730027.js",
+    "static/media/avtar1-fotor-bg-remover-2023112222209.png": "/my-portfolio/static/media/avtar1-fotor-bg-remover-2023112222209.99e0b5c513a7e4c7a489.png",
+    "static/media/Background.jpg": "/my-portfolio/static/media/Background.4a6304dc9b5b771664ea.jpg",
+    "index.html": "/my-portfolio/index.html",
+    "main.a31ad5fd.css.map": "/my-portfolio/static/css/main.a31ad5fd.css.map",
+    "main.6b730027.js.map": "/my-portfolio/static/js/main.6b730027.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a31ad5fd.css",
+    "static/js/main.6b730027.js"
+  ]
+}
