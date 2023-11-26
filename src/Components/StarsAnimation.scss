@@ -1,0 +1,54 @@
+$ring-size: 120px;
+$angle: 360deg;
+:root {
+	--ring-size: 200px;
+	--angle: -360deg;
+}
+body {
+	background-image: url(../Images/Background.jpg);
+    background-size:contain;
+
+}
+
+.particle {
+	position: absolute;
+	z-index: 999;
+	transform-style: preserve-3d;
+
+
+	&::after {
+		content: "";
+		width: 4px;
+		position: absolute;
+		height: 10px;
+		background: yellow;
+		border-radius: 100%;
+	}
+}
+
+@for $i from 1 through 100 {
+	$z: (random(360) * 0.3deg); //
+	$y: (random(360) * 0.3deg); //
+
+	.particle:nth-child(#{$i}) {
+		border-radius: 100%;
+		animation: birth#{$i} 100s infinite linear;
+	}
+
+	@keyframes birth#{$i} {
+		0% {
+			transform: rotateZ($z) rotateY($y) translateX(($ring-size));
+		}
+		50% {
+			transform: rotateZ($z * 50) rotateY($y * 50) translateX(($ring-size));
+		}
+		100% {
+			transform: rotateZ($z) rotateY($y) translateX(($ring-size));
+		}
+	}
+}
+
+
+
+// Stars
+
